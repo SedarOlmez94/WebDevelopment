@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+ 	<title>Learning Javascript</title>
+ 	<meta charset="utf-8" />
+ 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+ 	
+</head>	
+	<body>
+
+
+		<button id="stylesChanger">Change the text</button>
+
+		<div id="firstDiv">This is some text</div>
+
+
+		<script type="text/javascript">
+		/*	Multiline comment
+			Author: Sedar Olmez*/
+			
+			//document.getElementById("text").in nerHTML="Some more text";
+
+			// Declare our variable
+			var newText; 
+
+			var myArray = new Array();
+
+			myArray[0] = "Pizza";
+			myArray[1] = "Chocolate";
+
+			console.log(myArray);
+
+			myOtherArray = ["rain","sunshine"]; //declaring array with two values.
+
+			myOtherArray.push("snow"); //Adding item snow to end of array.
+
+			myOtherArray.splice(1, 0, "hail");//Adding item Hail just before item number 1 Sunshine, not removing any items.
+
+			myOtherArray.splice(0,0,"thunder","tornado");//Adding multiple items just before item index 0 which is rain.
+
+			console.log(myOtherArray);
+
+			console.log(myOtherArray.length); //Web console inspect present array values, length returns the total amount of items in array.
+
+
+			//get the Id of our Button stylesChanger and add a onclick function.
+			document.getElementById("stylesChanger").onclick = function(){
+
+				//Appending our div firstDiv with the value from our newText var.
+				document.getElementById("firstDiv").innerHTML=myArray[1];
+			}
+			
+		</script>
+
+	</body>
+</html>

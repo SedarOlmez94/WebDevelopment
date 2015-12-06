@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+ 	<title>Learning Javascript</title>
+ 	<meta charset="utf-8" />
+ 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+ 	
+</head>	
+	<body>
+
+		<p>What is the weather?</p>
+		<input id="weather">
+		<button id="myButton">Submit</button>
+
+		<script type="text/javascript">
+		/*	Multiline comment
+			Author: Sedar Olmez
+			IF STATEMENTS*/
+			
+		document.getElementById("myButton").onclick = function(){
+
+			var weatherValue = document.getElementById("weather").value;
+
+			if(weather != null){
+
+				alert("User suggests the weather is: " + weatherValue);
+
+			}else{
+
+				alert("Wrong weather!");
+
+			}
+		}
+
+		</script>
+
+	</body>
+</html>

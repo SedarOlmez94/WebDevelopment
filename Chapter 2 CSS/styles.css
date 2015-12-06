@@ -1,0 +1,248 @@
+body{
+                margin: 0;
+                font-family: arial,helvetica,sans-serif;
+            }
+            #topbar{
+                background-color: #7B0000;
+                width: 100%;
+                height: 40px;
+                color: white;
+            }
+
+            .fixedwidth{
+                width: 1050px;
+                margin: 0 auto;
+                
+            }
+            #logo{
+                padding-top: 5px;
+                float: left;
+                border-right: 1px solid #990000;
+                padding-right: 10px;
+            }
+
+            #signin{
+                padding: 6px 80px 3px 20px;
+                float: left;
+                border-right: 1px solid #990000;
+            }
+
+            #signin img{
+                position: relative;
+                top:3px;
+            }
+
+            #topmenu{
+                float: left;
+            }
+
+            #topmenu ul{
+                margin: 0;
+                padding: 0;
+            }
+
+            #topmenu li{
+                list-style: none;
+                font-weight: bold;
+                font-size: 0.9em;
+                border-right: 1px solid #990000;
+                height: 100%;
+                padding: 10px 20px 10px 20px;
+                float: left;
+            }
+
+            #searchdiv{
+                float: left;
+                padding: 5px 0 0 10px;
+            }
+
+            #searchdiv input{
+                height: 25px;
+                border:none;
+                padding-left: 10px;
+                font-size: 0.9em;
+                background-image: url("Images/glass.png");
+                background-repeat: no-repeat;
+                background-position: right center;
+            }
+
+            #newsbar{
+                background-color: #990000;
+                width: 100%;
+                height: 90px;
+                color: white;
+            }
+            .break{
+                clear:both;
+            }
+
+            #newsbar p{
+                margin: 0;
+                padding: 0;
+                padding-top: 10px;
+                float: left;
+
+            }
+
+            #newsheader{
+                font-size: 3em;
+
+            }
+
+            #uk{
+                font-size: 0.7em;
+                padding-left: 20px;
+            }
+
+            #rss{
+                float: right;
+                margin-top: 38px;
+            }
+
+            #rss img{
+                height: 14px;
+            }
+
+            #topicmenu{
+
+            }
+
+            #topicmenu ul{
+                background-color: #3E0C0D;
+                margin: 0;
+                padding: 5px 0 0 5px;
+                height: 20px;
+            }
+
+            #topicmenu li{
+                list-style: none;
+                font-size: 0.8em;
+                padding: 5px;
+                border-right: 1px solid #990000;
+                padding: 0 6px 0 6px;
+                float: left;
+                background-color: none;
+            }
+
+            .selected{
+                background-color: #EDEDED;
+                color: #505050;
+                height:20px;
+                position: relative;
+                top: -4px;
+                padding-top: 4px !important;
+            }
+
+            #content{
+                width: 100%;
+                color: #505050;
+                font-size: 0.75em;
+            }
+
+            .date{
+                font-weight: bold;
+            }
+
+            h1{
+                color: #1F4F82;
+                font-size: 2.5em;
+            }
+
+            #content img{
+                height: 220px; 
+                width: 360px;
+            }
+
+            .headlineimage{
+                float: left;
+            }
+
+            .newsitem{
+                position: relative;
+                left: 10px;
+                top: -15px;
+                width: 280px;
+                float: left;
+                font-size: 1.1em;
+            }
+
+            .newsitem a{
+                color: #1F4F82;
+                text-decoration: none;
+            }
+
+            .newsitem a:hover{
+                text-decoration: underline;
+            }
+
+            .video{
+                background-image: url("Images/bullet.png");
+                background-repeat: no-repeat;
+                background-position: left center;
+                padding-left: 20px;
+            }
+
+            .links{
+                line-height: 1.6em;
+            }
+
+            .sound{
+                background-image: url("Images/sound.png");
+                background-repeat: no-repeat;
+                background-position: left center;
+                padding-left: 20px;
+            }
+
+            #watchlisten{
+                background-color: #EEEEEE;
+                float: right;
+                width: 380px;
+                position: relative;
+                top: -80px;
+            }
+
+            h2{
+                color: #505050;
+                margin: 10px 0 10px 10px;
+                font-size: 1.8em;
+            }
+
+            .wlblock img{
+                float: left;
+                border-right: 1px solid white;
+                height: 130px !important;
+                width: 150px !important;
+            }
+            .live {
+                background-color:#F42924;
+                color:#FFF;
+                padding: 0 3px 0 3px;
+                margin-right:4px;
+                font-size:14px;
+                position:relative;
+                text-decoration: none;
+                top:-3px;
+            }
+
+            #watch-listen-links p{
+                margin: 15px  !important;
+               
+                
+            }
+
+            #watch-listen {
+                margin-top:25px;
+                background-color:#EEEEEE;
+                float:left;
+            }
+        
+            #watch-listen h2 {
+                color:#565656;
+                margin:10px 0 10px 10px;
+                font-size:180%;
+            }
+            #watch-listen-links a {
+                font-size:140%;
+                font-weight:bold;
+                color:#39638F;
+            } 
