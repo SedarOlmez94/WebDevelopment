@@ -5,7 +5,6 @@
  	<meta charset="utf-8" />
  	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
  	<meta name="viewport" content="width=device-width, initial-scale=1" />
- 	
 </head>	
 	<body>
 
@@ -14,28 +13,26 @@
 		<p class ="bold">Reaction time: <span id="time">0</span>s</p>
 
 		<style type="text/css">
+		
 			#title{
 				margin-left: 520px;
 			}
-
 			#box{
 				width: 200px;
 				height: 200px;
 				background-color: black;
 				display:none;
 				position:relative;
-
 			}
-
 			.bold{
 				font-weight:bold;
 			}
-
 			body{
 				font-family: "Lucida Console", Monaco, monospace;
 				font-size: 1.5em;
+				width:100%;
 			}
-
+			
 		</style>
 		
 		<div id = "box"></div>
@@ -44,40 +41,39 @@
 		/*	Multiline comment
 			Author: Sedar Olmez
 			MATH GAME*/
-
 			var clickedTime;
 			var createdTime;
 			var reactionTime;
-
+			
 			function makeBox(){
+				
 				setTimeout(function(){
-
+					
 					if(Math.random() > 0.5){
 						document.getElementById("box").style.borderRadius="100px";
 					} else{
 						document.getElementById("box").style.borderRadius="0px";
 					}
-
+					
 					var top = Math.random();
 					top = top * 400;
-
 					var left = Math.random();
 					left = left * 1080;
-
+					
 					document.getElementById("box").style.top = top+"px";
 					document.getElementById("box").style.left = left+"px";
 					document.getElementById("box").style.backgroundColor = getRandomColour();
 					document.getElementById("box").style.display="block";
 					createdTime = Date.now();
+					
 				}, randomNumber());
 			}
-
 			function randomNumber(){
 				var x = Math.random();
 				x = x * 3000;
 				return x;
 			}
-
+			
 			function getRandomColour(){
 				var letters = '0123456789ABCDEF'.split('');
 				var color = '#';
@@ -86,21 +82,14 @@
 				}
 				return color;
 			}
-
+			
 			document.getElementById("box").onclick=function(){
-
 				clickedTime = Date.now();
-
 				reactionTime = (clickedTime - createdTime)/1000;
-
-
 				document.getElementById("time").innerHTML = reactionTime;
-
 				this.style.display="none";	
-
 				makeBox();	
 			}
-
 		makeBox();
 			
 		</script>
